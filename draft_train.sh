@@ -1,0 +1,2 @@
+python -m train_colbert_ranker --model_name output/colbert_dense0.0_hn_denoiseFalse_marginmse_Luyu-co-condenser-marco-batch_size_128-2022-06-17_23-23-06/271000/0_ColBERTTransformer/ --train_batch_size 8 --accum_iter 4 --epochs 600000 --warmup_steps 6000 --loss_type kldiv_position_focal --num_negs_per_system 20 --cls_weight 0.0 --lr 1e-5 --continues --nway 5 --gamma 5.0 --alpha 2.0 >> kl_focal_5_2.out 
+MODEL
